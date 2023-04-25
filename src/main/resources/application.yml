@@ -1,0 +1,26 @@
+server:
+  port: 8000
+spring:
+  mvc:
+    static-path-pattern: /static/**
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://web-study.cpxqancqhi5t.ap-northeast-2.rds.amazonaws.com:3306/lash?allowMultiQueries=true
+    username: admin
+    password: 1q2w3e4r
+  security:
+    user:
+      name: admin
+      password: 1q2w3e4r
+mybatis:
+  mapper-locations:
+    - /mappers/*.xml
+
+file:
+  path: E:\bosung\bosung\lash-project
+
+
